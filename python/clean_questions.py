@@ -15,7 +15,7 @@ def read_questions(file_path):
                 questions.append(match.group(1))
     return questions
 
-def remove_duplicate_questions(questions, threshold=0.9):
+def remove_duplicate_questions(questions, threshold=0.8):
     """유사도가 높은 질문을 제거하여 중복 없는 리스트 생성"""
     embeddings = model.encode(questions, convert_to_tensor=True)
     similarity_matrix = util.pytorch_cos_sim(embeddings, embeddings)

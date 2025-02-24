@@ -53,7 +53,7 @@ for item in data:
         sentences = sent_tokenize(para)
 
         for sentence in sentences:
-            if len(sentence) > 5:  # 너무 짧거나 의미 없는 문장 제거
+            if len(sentence) > 10:  # 너무 짧거나 의미 없는 문장 제거
                 cleaned_data.append({"sentence": sentence})  # 개별 문장 저장
 
 # 결과 출력 예시 (상위 5개 문장만 확인)
