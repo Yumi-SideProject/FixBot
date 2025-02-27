@@ -18,7 +18,7 @@ MODEL_NAME = "llama-3.3-70b-versatile"
 embedding_model = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")  # 🔥 정확도 높은 임베딩 모델 사용
 
 # ✅ 파일 경로
-SENTENCES_FILES = ["/content/FixBot/Samsung_sentences_1.json", "/content/FixBot/Samsung_sentences_2.json"]
+SENTENCES_FILES = ["/content/FixBot/Samsung_sentences_1.json", "/content/FixBot/Samsung_sentences_2.json", "/content/FixBot/stt/cleaned_sentences.json"]
 QUESTIONS_FILE = "/content/FixBot/Samsung_cleaned_questions.txt"
 OUTPUT_FILE = "/content/FixBot/Samsung_answers.json"
 
