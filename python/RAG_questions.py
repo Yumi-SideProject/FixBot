@@ -24,7 +24,7 @@ class QuestionGenerator:
 
         prompt = f"""
         ## 역할
-        너는 세탁기 전문가 AI야. 
+        너는 세탁기 전문가 AI야.
         아래는 세탁기 관련 정보 문장들이다.
         각 문장을 보고, 사용자들이 실제 궁금해할 법한 "실용적인" 질문을 생성해줘.
         광고성 문구, 브랜드명, 의미 없는 문장은 무시하고, 꼭 필요한 정보에서만 질문을 생성해.
@@ -64,7 +64,7 @@ class QuestionGenerator:
         raw_questions = response.choices[0].message.content.strip().split("\n")
         cleaned_questions = self.clean_generated_questions(raw_questions)
         return [q.strip() for q in cleaned_questions if q.strip()]
-    
+
     @staticmethod
     def clean_generated_questions(raw_response_lines):
         filtered_questions = []
@@ -150,7 +150,7 @@ def main():
             source = sentence_item["url"]
 
             refined_question = refiner.refine(question)
-        
+
             print(f"✅ [{batch_idx+1}-{i+1}] 원문장: {original_sentence}")
             print(f"➡ 생성질문: {question}")
             print(f"➡ 정제질문: {refined_question}")
