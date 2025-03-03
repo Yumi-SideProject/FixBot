@@ -1,5 +1,5 @@
 from supabase import create_client
-from FixBot.config import SUPABASE_URL, SUPABASE_KEY
+from FixBot.FixBot.config import SUPABASE_URL, SUPABASE_KEY
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 

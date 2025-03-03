@@ -1,5 +1,5 @@
-from .question_filter import is_valid_question
-from .question_repository import fetch_video_questions, fetch_samsung_qna, save_to_tmp_table
+from steps.step1_question_filter.question_filter import is_valid_question
+from steps.step1_question_filter.question_repository import fetch_video_questions, fetch_samsung_qna, save_to_tmp_table
 
 def run_step1():
     video_questions = fetch_video_questions()

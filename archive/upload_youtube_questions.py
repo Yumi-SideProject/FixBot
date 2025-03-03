@@ -11,7 +11,7 @@ from supabase import create_client
 from datetime import datetime
 from FixBot.archive.embedding_utils import load_embedding_model, get_embedding
 from FixBot.archive.question_cleaner import clean_question
-from FixBot.config import SUPABASE_URL, SUPABASE_KEY
+from FixBot.FixBot.config import SUPABASE_URL, SUPABASE_KEY
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 model = load_embedding_model()

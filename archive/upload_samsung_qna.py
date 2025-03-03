@@ -4,7 +4,7 @@ from supabase import create_client
 import os
 from datetime import datetime
 import re
-from FixBot.config import SUPABASE_URL, SUPABASE_KEY
+from FixBot.FixBot.config import SUPABASE_URL, SUPABASE_KEY
 
 # 경로 설정 (디렉토리 구조 맞춰서 변경)
 DATA_PATH = 'C:/workspace/FixBot/data/Samsung_answers.json'

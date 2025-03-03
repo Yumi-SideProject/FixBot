@@ -1,3 +1,4 @@
+# FixBot 폴더를 sys.path에 추가
 from FixBot.config import SUPABASE_URL, SUPABASE_KEY
 from supabase import create_client
 from datetime import datetime

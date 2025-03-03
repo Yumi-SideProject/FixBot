@@ -3,7 +3,7 @@ import time
 import json
 from groq import Groq
 from supabase import create_client, Client
-from FixBot.config import SUPABASE_URL, SUPABASE_KEY, GROQ_API_KEY
+from FixBot.FixBot.config import SUPABASE_URL, SUPABASE_KEY, GROQ_API_KEY
 
 # ======== 환경 설정 ========
 MODEL_NAME = "llama3-8b-8192"
