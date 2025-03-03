@@ -3,11 +3,9 @@ import time
 import json
 from groq import Groq
 from supabase import create_client, Client
+from FixBot.config import SUPABASE_URL, SUPABASE_KEY, GROQ_API_KEY
 
 # ======== 환경 설정 ========
-SUPABASE_URL = "https://zarfhxylalgqcdnhocyf.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InphcmZoeHlsYWxncWNkbmhvY3lmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk4NDQ3MzcsImV4cCI6MjA1NTQyMDczN30.YX-Hspe2kg-TOic5rBX-7BGej8Ii8QNl0ZgqsTOjjzs"
-GROQ_API_KEY = "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"
 MODEL_NAME = "llama3-8b-8192"
 
 # ======== Supabase & Groq 초기화 ========

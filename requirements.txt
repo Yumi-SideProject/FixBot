@@ -2,3 +2,5 @@ faiss-cpu
 torch
 sentence-transformers
 numpy
+supabase
+python-dotenv
